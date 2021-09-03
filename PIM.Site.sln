@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIM.Site", "PIM.Site\PIM.Site.csproj", "{38B8DA3C-02D2-4311-BBB2-949CA41C4631}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38B8DA3C-02D2-4311-BBB2-949CA41C4631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B8DA3C-02D2-4311-BBB2-949CA41C4631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B8DA3C-02D2-4311-BBB2-949CA41C4631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B8DA3C-02D2-4311-BBB2-949CA41C4631}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C365B9FE-3E5D-4C60-81F5-F510E08DCE14}
+	EndGlobalSection
+EndGlobal
