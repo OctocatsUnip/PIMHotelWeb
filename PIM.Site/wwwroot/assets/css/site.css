@@ -18,6 +18,10 @@
     background-color: var(--second-color);
 }
 
+.background-light-pink {
+    background-color: var(--light-pink);
+}
+
 
 .f5{
     font-size: 22px;
@@ -140,4 +144,17 @@ body {
   width: 100%;
 }
 
+#banner-sobre {
+    background-image: url(/assets/images/6.jpeg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.espacamento-banner {
+    padding: 50px;
+}
 
