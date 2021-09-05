@@ -19,7 +19,7 @@
 }
 
 
-.f5{
+.f5 {
     font-size: 22px;
 }
 
@@ -27,7 +27,7 @@
     font-size: 18px;
 }
 
-p, a{
+p, a {
     font-size: 16px;
 }
 
@@ -48,25 +48,25 @@ p, a{
     }
 }
 
-@media( max-width: 461px){
-    .user{
-        padding-top: 18px;        
+@media( max-width: 461px) {
+    .user {
+        padding-top: 18px;
     }
 
     .container-navbar {
-        justify-content: space-around!important;
+        justify-content: space-around !important;
     }
 }
 
 /* End Section media
 -------------------------------------------------- */
 
-.user *{
+.user * {
     display: inline;
     color: white;
 }
 
-.user p, .user i{
+.user p, .user i {
     position: relative;
     bottom: -5px;
 }
@@ -85,59 +85,292 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #0366d6;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 
+/*carousel da Home*/
+container-fluid {
+    padding: 0;
+}
+
+#homeCarousel .carousel-inner, #homeCarousel .carousel-item {
+    height: 660px;
+}
+
+#homeCarousel .carousel-caption {
+    top: 30%;
+}
+
+    #homeCarousel .carousel-caption h2 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    #homeCarousel .carousel-caption h2 {
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        color: #e5e5e5;
+    }
+
+    #homeCarousel .carousel-caption p {
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: #e5e5e5;
+    }
+
+.main-btn {
+    background-color: #65DAF9;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+    .main-btn:hover {
+        text-decoration: none;
+        color: #FFF;
+        background-color: transparent;
+        border-color: #65DAF9;
+    }
+
+.carousel-indicators .active {
+    background-color: #65DAF9;
+}
+/*Carrosel finalizado*/
+
+/*Serviçoes da home*/
+.service-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+    .service-box i, .service-box h4 {
+        transition: .5s;
+    }
+
+    .service-box i {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #444;
+    }
+
+    .service-box h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .service-box:hover > i, .service-box:hover > h4 {
+        color: #65DAF9;
+    }
+
+/*Card quartos*/
+.home-main-title {
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+    .home-main-title:after {
+        content: "";
+        border-top: 2px solid #333;
+        width: 15%;
+        position: absolute;
+        top: 60px;
+        left: 42.5%;
+    }
+
+.home-card-body {
+    text-align: center;
+    background-color: #DFD6D1;
+    width: 365px;
+}
+
+.card-img-top {
+    height: 242px;
+    width: 361px;
+    left: 137px;
+    top: 1414px;
+    border-radius: 3px;
+}
+
+.home-card-title {
+    text-align: initial;
+    font-size: 48px;
+    font-weight: 400;
+    color: #097100;
+}
+
+.home-card-body i {
+    height: 30px;
+    width: 35px;
+    left: 35px;
+    top: 3.5px;
+    border-radius: 0px;
+    color: #FFD700;
+    text-align: end;
+}
+
+.home-card-text {
+    text-align: center;
+    height: 62px;
+    width: 182px;
+    left: 140px;
+    top: 1731px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.card-p {
+    text-align: end;
+}
+/*card quartos fim*/
+
+/*card reservar*/
+
+.card-body-reservar {
+    background-color: #94A098;
+    text-align: center;
+    width: 103%;
+    height: 300px;
+}
+
+.card-title-reservar {
+    height: 56px;
+    width: 278px;
+    left: 367px;
+    top: 2125px;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 10px;
+}
+
+.card-text-reservar {
+    height: 144px;
+    width: 419px;
+    left: 302px;
+    top: 2203px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.btn-primary-reservar {
+    border-radius: 10px;
+    background-color: #4B5B5B;
+    color: #FFF;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*fim card reservar*/
+
+/*viagens*/
+
+.card-body-vistas {
+    text-align: center;
+    background-color: #FFF;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+    .card-body-vistas i {
+        font-size: 36px;
+        margin: 30px;
+        color: #4B5B5B;
+    }
+
+.card-body-viagem {
+    text-align: center;
+    background-color: #DDC8BE;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+}
+
+    .card-body-viagem i {
+        font-size: 36px;
+        padding-left: 150px;
+        margin: 20px;
+        color: #4B5B5B;
+    }
+
+.card-body-trens {
+    text-align: center;
+    background-color: #FFF;
+    font-size: 16px;
+    text-align: end;
+    padding: 250px;
+}
+
+    .card-body-trens i {
+        font-size: 36px;
+        margin: 30px;
+        color: #4B5B5B;
+    }
