@@ -18,6 +18,10 @@
     background-color: var(--second-color);
 }
 
+.background-light-pink {
+    background-color: var(--light-pink);
+}
+
 
 .f5 {
     font-size: 22px;
@@ -198,6 +202,7 @@ container-fluid {
 }
 /*Carrosel finalizado*/
 
+<<<<<<< HEAD
 /*Serviçoes da home*/
 .service-box {
     text-align: center;
@@ -213,6 +218,21 @@ container-fluid {
         margin-bottom: 20px;
         color: #444;
     }
+=======
+#banner-sobre {
+    background-image: url(/assets/images/6.jpeg);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.espacamento-banner {
+    padding: 50px;
+}
+>>>>>>> f1c72a201f19dd8011fe5e2c1631cbbf0a229281
 
     .service-box h4 {
         font-size: 24px;
