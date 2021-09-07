@@ -1,5 +1,3 @@
-using System;
-
 namespace PIM.Site.Models
 {
     public class ErrorViewModel

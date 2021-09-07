@@ -2,7 +2,7 @@
 
 namespace PIM.Site.Controllers
 {
-    public class SobreController : Controller
+    public class PoliticaController : Controller
     {
         public IActionResult Index()
         {
