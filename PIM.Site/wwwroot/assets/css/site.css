@@ -394,3 +394,9 @@ container-fluid {
         margin: 30px;
         color: #4B5B5B;
     }
+/* Politica de privacidade*/
+
+::marker{
+    font-size: 20px;
+    font-weight: 600;
+}
