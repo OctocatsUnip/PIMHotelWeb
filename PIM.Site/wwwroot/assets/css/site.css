@@ -147,63 +147,66 @@ body {
 
 
 /*carousel da Home*/
-container-fluid {
-    padding: 0;
+
+.carousel-item{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
-#homeCarousel .carousel-inner, #homeCarousel .carousel-item {
-    height: 660px;
-}
-
-#homeCarousel .carousel-caption {
-    top: 30%;
-}
-
-    #homeCarousel .carousel-caption h2 {
-        font-size: 50px;
-        margin-bottom: 50px;
+    .inicio .caixa {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+    .inicio .texto{
+        color:#FFF;
     }
 
-    #homeCarousel .carousel-caption h2 {
-        font-size: 64px;
-        font-weight: 700;
-        margin-bottom: 50px;
-        color: #e5e5e5;
+    .inicio .row {
+        align-content: center;
+        align-items: center;
+        height: 90vh;
+        padding-bottom: 30%;
     }
 
-    #homeCarousel .carousel-caption p {
-        font-size: 36px;
-        font-weight: 400;
-        margin-bottom: 10px;
-        color: #e5e5e5;
-    }
-
-.main-btn {
-    background-color: #65DAF9;
-    color: #FFF;
-    text-transform: uppercase;
-    width: 200px;
-    height: 60px;
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: 3px solid transparent;
-    transition: .5s;
-}
-
-    .main-btn:hover {
-        text-decoration: none;
-        color: #FFF;
-        background-color: transparent;
-        border-color: #65DAF9;
-    }
-
-.carousel-indicators .active {
+.indinicio .active {
     background-color: #65DAF9;
 }
 /*Carrosel finalizado*/
 
-<<<<<<< HEAD
 /*Serviçoes da home*/
+.home-main-title {
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.home-main-title:after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+#homeServicos .img-fundo {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+}
+
+
 .service-box {
     text-align: center;
     margin-bottom: 50px;
@@ -216,9 +219,27 @@ container-fluid {
     .service-box i {
         font-size: 36px;
         margin-bottom: 20px;
-        color: #444;
+        color: #000;
     }
-=======
+
+    .service-box h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color:#000;
+    }
+
+    .service-box p {
+        font-size: 16px;
+        color: #000;
+    }
+
+    .service-box:hover > i, .service-box:hover > h4 {
+        color: #65DAF9;
+    }
+/*serviços da Home terminado*/
+
+
+/*Banner*/
 #banner-sobre {
     background-image: url(/assets/images/6.jpeg);
     height: 50vh;
@@ -232,47 +253,167 @@ container-fluid {
 .espacamento-banner {
     padding: 50px;
 }
->>>>>>> f1c72a201f19dd8011fe5e2c1631cbbf0a229281
+/*Banner final*/
 
-    .service-box h4 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
 
-    .service-box:hover > i, .service-box:hover > h4 {
-        color: #65DAF9;
-    }
 
-/*Card quartos*/
-.home-main-title {
+/*card reservar*/
+
+.card-body-reservar {
+    background-color: #94A098;
+    width: 100%;
+    height: 100%;
+}
+
+.card-title-reservar {
+    font-size: 48px;
+    text-align: center;
+    margin: 5%;
+}
+
+.card-text-reservar {
+    height: 100%;
+    width: 90%;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    margin-left:5%
+}
+.btn-secondary {
+    text-align: center;
+    margin-top:12%
+}
+
+/*fim card reservar*/
+
+/*viagens*/
+
+#viagens i {
+    font-size: 36px;
+    margin: 30px;
+    color: #4B5B5B;
+}
+
+.body-vistas {
+    width:100%;
+    height:100%;
+    text-align: left;
+    background-color: #FFF;
+    font-size: 16px;
+    margin:2%;
+}
+
+
+
+.body-viagem {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #DDC8BE;
+    font-size: 16px;
+}
+
+
+.body-trens {
+    width: 100%;
+    height: 100%;
+    text-align: end;
+    background-color: #FFF;
+    font-size: 16px;
+    
+}
+
+/* Politica de privacidade*/
+
+::marker {
+    font-size: 20px;
+    font-weight: 600;
+}
+/*card carousel quartos*/
+.shadow-effect {
+    background: #DFD6D1;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ececec;
+    box-shadow: 0 19px 38px rgba(255,255,255,0.08), 0 15px 12px rgba(255,255,255,0.08);
+}
+#carousel-card .shadow-effect p{
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    margin:0 0 17px 0;
+    font-weight:300;
+}
+.card-nome {
+    margin: -17px auto 0;
+    display: table;
+    width: auto;
+    background: #3190e7;
+    padding: 9px 35px;
+    border-radius: 12px;
+    text-align: center;
     color: #444;
-    margin: 0 0 65px 0;
-    font-size: 40px;
-    text-align: center;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
 }
 
-    .home-main-title:after {
-        content: "";
-        border-top: 2px solid #333;
-        width: 15%;
-        position: absolute;
-        top: 60px;
-        left: 42.5%;
+#carousel-card i{
+    text-align:end;
+
+}
+
+#carousel-card .item{
+    text-align:center;
+    padding: 50px;
+    margin-bottom:20px;
+    opacity:0.2;
+    -webkit-transform: scale3d(0.8,0.8,1);
+    transform: scale3d(0.8,0.8,1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+
+#carousel-card .owl-item.active.center .item {
+    opacity:1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+.owl-carousel .owl-item img{
+    max-width:150px;
+    margin:0 auto 17px;
+    border-radius: 6px;
+}
+
+#carousel-card.owl-carousel .owl-dots .owl-dot.active span,
+#carousel-card.owl-carousel .owl-dots .owl-dot:hover span
+{
+    background-color:#3190e7;
+    transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+
+#carousel-card.owl-carousel .owl-dots{
+    display: inline-block;
+    width:100%;
+    text-align:center;
+}
+
+#carousel-card.owl-carousel .owl-dots .owl-dot{
+    display:inline-block;
+}
+
+    #carousel-card.owl-carousel .owl-dots .owl-dot span {
+        background: #3190e7;
+        display: inline-block;
+        height: 20px;
+        margin: 0 2px 5px;
+        transform: translate3d(0px, -50%, 0px) scale(0.3);
+        transform-origin: 50% 50% 0;
+        transition:all 250ms ease-out 0s;
+        width:20px;
+        border-radius:20px;
     }
 
-.home-card-body {
-    text-align: center;
-    background-color: #DFD6D1;
-    width: 365px;
-}
-
-.card-img-top {
-    height: 242px;
-    width: 361px;
-    left: 137px;
-    top: 1414px;
-    border-radius: 3px;
-}
 
 .home-card-title {
     text-align: initial;
@@ -281,122 +422,5 @@ container-fluid {
     color: #097100;
 }
 
-.home-card-body i {
-    height: 30px;
-    width: 35px;
-    left: 35px;
-    top: 3.5px;
-    border-radius: 0px;
-    color: #FFD700;
-    text-align: end;
-}
-
-.home-card-text {
-    text-align: center;
-    height: 62px;
-    width: 182px;
-    left: 140px;
-    top: 1731px;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.card-p {
-    text-align: end;
-}
-/*card quartos fim*/
-
-/*card reservar*/
-
-.card-body-reservar {
-    background-color: #94A098;
-    text-align: center;
-    width: 103%;
-    height: 300px;
-}
-
-.card-title-reservar {
-    height: 56px;
-    width: 278px;
-    left: 367px;
-    top: 2125px;
-    font-size: 48px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: 0em;
-    text-align: center;
-    margin: 10px;
-}
-
-.card-text-reservar {
-    height: 144px;
-    width: 419px;
-    left: 302px;
-    top: 2203px;
-    font-size: 28px;
-    font-weight: 300;
-    line-height: 33px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.btn-primary-reservar {
-    border-radius: 10px;
-    background-color: #4B5B5B;
-    color: #FFF;
-    font-size: 30px;
-    text-align: center;
-}
-
-/*fim card reservar*/
-
-/*viagens*/
-
-.card-body-vistas {
-    text-align: center;
-    background-color: #FFF;
-    font-size: 16px;
-    text-align: left;
-    margin-left: 80px;
-}
-
-    .card-body-vistas i {
-        font-size: 36px;
-        margin: 30px;
-        color: #4B5B5B;
-    }
-
-.card-body-viagem {
-    text-align: center;
-    background-color: #DDC8BE;
-    font-size: 16px;
-    text-align: center;
-    margin: 20px;
-}
-
-    .card-body-viagem i {
-        font-size: 36px;
-        padding-left: 150px;
-        margin: 20px;
-        color: #4B5B5B;
-    }
-
-.card-body-trens {
-    text-align: center;
-    background-color: #FFF;
-    font-size: 16px;
-    text-align: end;
-    padding: 250px;
-}
-
-    .card-body-trens i {
-        font-size: 36px;
-        margin: 30px;
-        color: #4B5B5B;
-    }
-/* Politica de privacidade*/
-
-::marker{
-    font-size: 20px;
-    font-weight: 600;
+/*cards carousel quartos fim*/
 }
