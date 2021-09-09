@@ -255,7 +255,78 @@ body {
 }
 /*Banner final*/
 
+/* img com texto sobre */
 
+#meio-sobre {
+    margin: 100px;
+    margin-bottom: 20px;
+}
+
+.imagem7 {
+    width: 441px;
+    height: 381px;
+    float: left;
+    margin: 10px 40px 0px 10px;
+}
+
+.textmeio {
+    display: contents;
+    float: left;
+}
+
+.firsth1 {
+    line-height: 76px;
+    text-decoration-line: underline;
+}
+
+.text-meio-h3 {
+    line-height: 120px;
+    font-size: 20px;
+    font-family: inherit;
+    font-style: normal;
+}
+
+.p1textmeio {
+    font-size: 16px;
+}
+
+.p2textomeio {
+    font-size: 16px;
+}
+
+/*final immg com texto sobre */
+
+
+/* segundo texto sobre com icons*/
+
+#texto-meio2 {
+    font-size: 18px;
+    padding: 20px 20px 20px 20px;
+}
+
+
+
+
+
+
+/* final segundo texto sobre com icons  */
+
+
+
+
+/* imagem - video sobre*/
+
+
+
+/* final imagem -video sobre */
+
+
+
+
+/* card sobre */
+
+
+/* final card sobre */
 
 /*card reservar*/
 
