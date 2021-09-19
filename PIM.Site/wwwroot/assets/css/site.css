@@ -567,4 +567,20 @@ button#btnF {
     -webkit-transform: scale3d(1,1,1);
     transform: scale3d(1,1,1);
 }
+
+#conteudo-direita .quarto-preco {
+    font-size: 22px;
+    color: #097100;
+}
+
+#conteudo-direita .card-title {
+    font-size: 22px;
+    color: black;
+    align-content:center;
+}
+
+#conteudo-direita i {
+    font-size: 22px;
+    padding-right:1%;
+}
 /*Fim Conteudo da direita*/
