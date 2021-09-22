@@ -1,47 +1,65 @@
 ﻿<section style="margin-top: 50px">
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                <div id="perfil">
-                    <div class="card" style="width: 18rem;">
-                        <img src="~/assets/images/perfil.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">pessoa@exemple.com.br</p>
-                            <p class="card-text">(00) 00000-0000</p>
+            <div class="col-md-4">
+                <div class="container">
+                    <div class="background-light-pink perfil">
+                        <div class="foto-perfil" style="background-image: url('/assets/images/perfil.png')">
+                            <div class="nome-user"><h3>Pessoa</h3></div>
+                            <div class="qtn-quarto"><p>1 quarto</p></div>
+                        </div>
+                        <div>
+                        <i class="fas fa-envelope"></i> <p class="d-inline">pessoa@exemple.com.br</p>
+                        </div> 
+                        <div>
+                        <i class="fas fa-phone-alt"></i> <p class="d-inline">(00) 00000-0000</p>
+                        </div>
+                        <div style="padding-top:40px">
+                            <div>
+                                <a class="btn w-100 botao">Editar perfil</a>
+                            </div>
+                            <div>
+                                <a class="btn w-100 botao">Visualizar quartos</a>
+                            </div>
+                            <div>
+                                <a class="btn w-100 botao">Baixar Aplicativo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <p class="text-center">Modificar Dados</p>
-                <form>
+            <div class="col-md-8">
+                <p class="text-center background-light-pink">Modificar Dados</p>
+                <form class="formulario">
+                    
                     <div class="row">
                         <div class="col-12">
                             <label for="nome">Nome de Usuário:</label>
-                            <input class="w-100" type="text" id="nome" placeholder="Nome"/>
+                            <input class="w-100" type="text" id="nome" placeholder="Nome" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6">
                             <label for="prof">Profissão:</label>
-                            <input class="w-100" type="text" id="prof" />
+                            <input class="w-100" type="text" id="prof" placeholder="Autônomo..." />
                         </div>
                         <div class="col-6">
                             <label for="email">E-mail:</label>
-                            <input class="w-100" type="text" id="email" />
+                            <input class="w-100" type="text" id="email" placeholder="pessoa@example.com.br"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6">
                             <label for="tell">Telefone:</label>
-                            <input class="w-100" type="text" id="tell" />
+                            <input class="w-100" type="text" id="tell" placeholder="(00)00000-0000" />
                         </div>
                         <div class="col-6">
                             <label for="cell">Celular:</label>
-                            <input class="w-100" type="text" id="cell" />
+                            <input class="w-100" type="text" id="cell" placeholder="(00)00000-0000" />
                         </div>
                     </div>
-                    <div class="row">
+                  
+                    <div class="row" style="margin-top: 50px">
                         <div class="col-6">
                             <label for="cep">CEP:</label>
                             <input class="w-100" type="text" id="cep" />
@@ -54,24 +72,24 @@
                     <div class="row">
                         <div class="col-12">
                             <label for="endereco">Endereço:</label>
-                            <input class="w-100" type="text" id="endereco" />
+                            <input class="w-100" type="text" id="endereco" placeholder="Endereço"/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6">
                             <div class="row">
                                 <div class="col-6">
-                                    <label for="num">Número:</label>
+                                    <label for="num" style="display: block">Número:</label>
                                     <input class="w-100" type="text" id="num" />
                                 </div>
                                 <div class="col-6">
-                                    <label for="uf">UF:</label>
+                                    <label for="uf" style="display: block">UF:</label>
                                     <input class="w-100" type="text" id="uf" />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" style="margin-top: 50px">
                         <div class="col-6">
                             <label for="Nsenha">Nova senha:</label>
                             <input class="w-100" type="text" id="Nsenha" />
@@ -81,12 +99,12 @@
                             <input class="w-100" type="text" id="CNsenha" />
                         </div>
                     </div>
-                    <div class="row"  style="margin-top: 50px">
+                    <div class="row" style="margin-top: 50px">
                         <div class="col-6">
-                            <button>Cancelar alterações</button>
+                            <a class="btn background-light-pink botaos">Cancelar alterações</a>
                         </div>
                         <div class="col-6">
-                            <button>Salvar alterações</button>
+                            <a class="btn background-light-pink botaos" style="float: right">Salvar alterações</a>
                         </div>
                     </div>
                 </form>
