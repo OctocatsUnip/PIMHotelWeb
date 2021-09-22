@@ -584,3 +584,376 @@ button#btnF {
     padding-right:1%;
 }
 /*Fim Conteudo da direita*/
+
+/*-----------------------INFO QUARTOS-------------------------*/
+
+
+/*calendar */
+
+
+/* final calendar */
+
+
+
+
+/*icons-info*/
+
+
+#icons-info {
+    display: inline-block;
+}
+
+
+
+.wifi-icon {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 279px;
+    top: 258px;
+}
+
+.wifi-text {
+    position: absolute;
+    width: 156px;
+    height: 39px;
+    left: 239px;
+    top: 350px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+}
+
+.food-icon {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 483px;
+    top: 262px;
+}
+
+
+.food-text {
+    position: absolute;
+    width: 156px;
+    height: 39px;
+    left: 446px;
+    top: 350px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+}
+
+
+.servicos-icon {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 677px;
+    top: 258px;
+}
+
+
+.servicos-text {
+    position: absolute;
+    width: 156px;
+    height: 18px;
+    left: 642px;
+    top: 352px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+}
+
+.peso-icon {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 874px;
+    top: 280px;
+}
+
+.peso-text {
+    position: absolute;
+    width: 156px;
+    height: 39px;
+    left: 839px;
+    top: 352px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+}
+
+.pata-icon {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 1080px;
+    top: 258px;
+}
+
+.pata-text {
+    position: absolute;
+    width: 156px;
+    height: 39px;
+    left: 1045px;
+    top: 352px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+}
+
+
+
+
+
+
+/* final icons-info*/
+/*texto após os icons*/
+#texto-imagem {
+    margin: 191px 249px 0px 279px;
+    border-bottom: 1px solid #101010;
+    margin-bottom: 2em;
+}
+
+
+.main-title {
+    text-align: center;
+    border-bottom: 1px solid #101010;
+    margin-bottom: 2em;
+}
+
+.info-h3 {
+    margin: 0em 0em 1em 0em;
+}
+
+.text-beforeh3 {
+    margin: 0em 0em 3em 0em;
+}
+
+.title-list {
+    margin: 0em 0em 1em 0em;
+}
+
+.list-info {
+    margin: 0em 0em 1em 0em;
+}
+
+
+/* final de texto após os icon*/
+
+/*Texto spoiler info*/
+
+#spoiler {
+    margin: 330px 0px 5px 125px;
+}
+#spoiler1 {
+    
+}
+
+#spoiler button {
+    margin: 25px 42px 0px 396px;
+}
+
+
+
+
+/* Final Texto spoiler info*/
+
+
+
+/* pacotes cards */
+
+
+
+.espacamento-pacotes {
+    margin: 0em 0em 2em 0em;
+}
+
+#Pacotes-info h2 {
+    height: 40px;
+}
+
+.flip-container {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flipper {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+    /* se quiser uma animação na vertical,
+	troque por rotateX(180deg)
+	*/
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.front {
+    border: groove;
+}
+
+.back {
+    transform: rotateY(180deg);
+    border: groove;
+    height: 150%;
+}
+
+
+
+
+#Pacotes-info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+    #Pacotes-info h1 {
+        font-size: 23px;
+        line-height: 62px;
+        text-align: center;
+        margin-bottom: 3em;
+        text-decoration: underline;
+        width: 296px;
+        height: 9px;
+        left: 208px;
+        top: 1389px;
+        background: rgba(48, 53, 53, 0.74);
+        color: rgb(38, 37, 39);
+    }
+
+    #Pacotes-info h6 {
+        height: 1em;
+        margin-left: 1em;
+    }
+
+    #Pacotes-info h3 {
+        margin: 0em 0em 0em 8em;
+        color: #646464;
+    }
+
+    #Pacotes-info h5 {
+        font-size: 10px;
+        float: right;
+    }
+
+    #Pacotes-info h4 {
+        font-size: 15px;
+    }
+
+    #Pacotes-info p {
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+#Pacotes-info2 {
+    margin: 190px 0px 55px 0px;
+    height: 304px;
+}
+
+
+
+
+    #Pacotes-info2 h1 {
+        font-size: 23px;
+        line-height: 62px;
+        text-align: center;
+        margin-bottom: 3em;
+        text-decoration: underline;
+        width: 296px;
+        height: 9px;
+        left: 208px;
+        top: 1389px;
+        background: rgba(48, 53, 53, 0.74);
+        color: rgb(38, 37, 39);
+    }
+
+
+    #Pacotes-info2 h6 {
+        height: 1em;
+        margin-left: 1em;
+    }
+
+    #Pacotes-info2 h3 {
+        margin: 0em 0em 0em 8em;
+        color: #646464;
+    }
+
+    #Pacotes-info2 h5 {
+        font-size: 10px;
+        float: right;
+    }
+
+    #Pacotes-info2 h4 {
+        font-size: 15px;
+    }
+
+    #Pacotes-info2 p {
+        font-size: 10px;
+    }
+
+.list-card {
+    font-size: 10px;
+}
+
+#Pacotes-info a {
+    margin: 1em 1em 1em 6em;
+}
+
+#Pacotes-info2 a {
+    margin: 1em 1em 1em 6em;
+}
+
+
+
+
+
+
+
+
+
+
+/* final pacotes cards*/
+
+
+
+
+/*-----------------------FINAL DE INFO QUARTOS-------------------------*/
+
