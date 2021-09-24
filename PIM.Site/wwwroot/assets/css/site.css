@@ -573,7 +573,6 @@ button#btnF {
     padding-right:1%;
 }
 /*Fim Conteudo da direita*/
-}
 
 /*Alterar Conta*/
 
@@ -1016,3 +1015,25 @@ button#btnF {
 
 /*-----------------------FINAL DE INFO QUARTOS-------------------------*/
 
+
+/*-----------------------INICIO DE VISUALIZA QUARTOS-------------------------*/
+
+.areaQuarto {
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: lightgrey;
+    border-width: thin;
+    padding: 35px 35px 0px 35px;
+}
+
+.img-room {
+    width: 40%;
+    height: 100%;
+}
+
+.lista ::marker {
+    font-size: 15px;
+}
+
+/*-----------------------FIM DE VISUALIZA QUARTOS----------------------------*/
