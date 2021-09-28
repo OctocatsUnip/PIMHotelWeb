@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace PIM.Site.Controllers
 {
-    public class SelecionarQuartoController : Controller
+    public class UserController : Controller
     {
+        [Route("alterar-conta")]
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        [Route("meus-quartos")]
+        public IActionResult MeusQuartos()
         {
             return View();
         }

@@ -15,7 +15,7 @@ namespace PIM.Site.Controllers
         public IActionResult Index()
         {
             return View();
-        }
+        }        
 
     }
 }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace PIM.Site.Controllers
 {
-    public class QuartoInfoController : Controller
+    public class ContatoController : Controller
     {
+        [Route("contato")]
         public IActionResult Index()
         {
             return View();

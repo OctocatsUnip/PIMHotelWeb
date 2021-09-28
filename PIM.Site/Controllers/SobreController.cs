@@ -8,5 +8,11 @@ namespace PIM.Site.Controllers
         {
             return View();
         }
+
+        [Route("politica-de-privacidade")]
+        public IActionResult PoliticaPrivacidade()
+        {
+            return View();
+        }
     }
 }

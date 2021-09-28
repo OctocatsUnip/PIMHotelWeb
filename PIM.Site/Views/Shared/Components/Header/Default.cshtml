@@ -1,25 +1,35 @@
 ﻿
 <nav class="navbar navbar-expand-lg navbar-dark background-primary">
     <div class="container-navbar container">
-        <a class="navbar-brand" href="#"><img src="/assets/images/logo.png" style="max-width: 75%;"/></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="/assets/images/logo.png" style="max-width: 75%;" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home</a>
-                <a class="nav-item nav-link" href="#">Sobre</a>
-                <a class="nav-item nav-link" href="#">Serviços</a>
-                <a class="nav-item nav-link" href="#">Contato</a>
+                <a class="nav-item nav-link" href="@Url.Action("Index", "Home")">Home</a>
+                <a class="nav-item nav-link" href="@Url.Action("Index", "Sobre")">Sobre</a>
+                <a class="nav-item nav-link" href="@Url.Action("Index", "Servicos")">Serviços</a>
+                <a class="nav-item nav-link" href="@Url.Action("Index", "Contato")">Contato</a>
             </div>
         </div>
 
-        <div class="user pl-5">
+        <!-- Example single danger button -->
+        <div class="btn-group btn-user pl-5">
             <div class="user-image">
                 <img src="/assets/images/user.png" />
             </div>
-            <p class="f6 pl-2">Pessoa</p>
-            <i class="fas fa-chevron-down f5 pl-3" style="position: relative; bottom: -5px;"></i>
+            <p class="f6 pl-2 pt-3 text-white">Pessoa</p>
+            <button type="button" class="dropdown-toggle btn-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-chevron-down text-white f5 pl-3 pb-2" style="position: relative; bottom: -5px;"></i>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="@Url.Action("Index", "User")">Editar Perfil</a>
+                <a class="dropdown-item" href="@Url.Action("MeusQuartos", "User")">Visualizar quartos</a>                
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Sair</a>
+            </div>
         </div>
+
     </div>
 </nav>
