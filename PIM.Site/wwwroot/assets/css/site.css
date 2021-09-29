@@ -65,6 +65,21 @@ p, a, .nav-item {
 /* End Section media
 -------------------------------------------------- */
 
+.back-img {
+    min-height: 450px;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.outline-white{
+    border: 5px solid white;
+    padding: 8px;
+}
+
 .user * {
     display: inline;
     color: white;
@@ -81,11 +96,43 @@ p, a, .nav-item {
     width: 80%;
 }
 
+.btn-drop {
+    padding: 0!important;
+    margin: 0!important;
+    background: transparent!important;
+    border: none!important;
+}
+
+.btn-drop::after{
+    display:none;
+}
+
+.btn-drop:focus{
+    outline: none;
+}
+
+.btn-user .dropdown-menu {
+    float: right !important;
+    right: -15px !important;
+    left: unset !important;
+    background-color: var(--primary-color) !important;
+    border: none;
+    -webkit-box-shadow: 0px 10px 10px -5px #000000;
+    box-shadow: 0px 10px 10px -5px #000000;
+    /*transition: 0.5s ease-out;*/
+}
+
+.btn-user .dropdown-divider {
+    border-top: .5px solid #000000;
+}
+
+
 a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
 }
+
 
 /* Provide sufficient contrast against white background */
 a {
@@ -102,6 +149,11 @@ a {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
+}
+
+.nav-item:active, nav-link:active{
+    color: white;
+    background-color: var(--second-color);
 }
 
 /* Sticky footer styles
@@ -141,13 +193,19 @@ body {
 
 .footer {
     position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
+.line-around {
+    border-left: 1px solid var(--personal-pink);
+    border-right: 1px solid var(--personal-pink);
+}
+
+.social-medias i {
+    font-size: 20px;
+}
 
 /*carousel da Home*/
-
 .carousel-item {
     height: 100%;
     background-repeat: no-repeat;
