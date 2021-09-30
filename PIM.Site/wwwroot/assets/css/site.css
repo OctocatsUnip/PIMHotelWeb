@@ -202,11 +202,7 @@ body {
 }
 
 .social-medias i {
-    font-size: 30px;
-}
-
-.social-medias-dark i{
-    font-size: 40px;
+    font-size: 20px;
 }
 
 /*carousel da Home*/
@@ -1099,67 +1095,3 @@ button#btnF {
 }
 
 /*-----------------------FIM DE VISUALIZA QUARTOS----------------------------*/
-
-/*************Contato***************/
-
-#contato i{
-    color: var(--second-color);
-}
-
-
-/***********Logins e criação de conta**********/
-
-.section-log {
-    background-color: #EDEDED;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-log .top-logo{
-    background-color: var(--second-color);
-    padding: 14px 5px 5px 5px;
-    width: 105px;
-    height: 60px;
-}
-
-.section-log .user-log {
-    background-color: white;
-    /*padding: 50px 30px 0 30px;*/
-    border-top: 5px solid var(--second-color);
-    width: 400px;
-}
-
-.section-log .user-log .form-log{
-    margin: 50px;
-}
-
-.section-log .user-log .form-log input-container {
-    position: relative;
-    direction: ltr;
-    background-color: transparent;
-}
-
-.section-log .user-log .form-log input {
-    width: 90%;
-    height: 40px;
-    padding-left: 0!important;
-}
-
-.section-log .user-log .icons-log {
-    position: absolute;
-    right: -4px;
-    background-color: var(--second-color);
-    height: 40px;
-    width: 50px;
-    display: flex;
-    top: 28px;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-log .user-log .icons-log i{
-    font-size: 22px;
-    color: white;
-}

@@ -13,9 +13,13 @@
 </head>
 <body>
 
-    <div style="overflow-x: hidden;">
+    <vc:header></vc:header>
+
+    <div style="margin-bottom: 300px">
         @RenderBody()
     </div>
+
+    <partial name="_Footer" />
 
     <script src="assets/lib/jquery/dist/jquery.min.js"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

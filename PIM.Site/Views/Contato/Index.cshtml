@@ -1,10 +1,10 @@
 ﻿<vc:banner pagina="contato"></vc:banner>
 
-<section id="contato" class="pt-5">
+<section>
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center text-white">
             <div class="col-12">
-                <h3 class="home-main-title">Entre em contato conosco!</h3>
+                <h3 class="home-main-title text-white">Contato</h3>
             </div>
 
             <div class="col-md-4 text-center">
@@ -27,10 +27,10 @@
     </div>
 </section>
 
-<section class="background-second" style="padding: 60px 0; margin-top: 50px;">
+<section>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6 text-center text-white pb-5">
+            <div class="col-10">
                 <h4>Caso tenha qualquer dúvida, consideração ou sugestão é só nos enviar uma mensagem!</h4>
             </div>
 
@@ -41,19 +41,25 @@
                         <div class="col-12">
                             <input class="w-100" type="text" id="nome" placeholder="Nome" />
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-12">
-                            <input class="w-100" type="text" id="email" placeholder="E-mail" />
-                        </div>
-                        <div class="col-12">
-                            <input class="w-100" type="text" id="assunto" placeholder="Assunto" />
-                        </div>
-                        <div class="col-12">
-                            <textarea class="w-100" type="text" id="mensagem" name="mensagem" rows="5" placeholder="Mensagem"></textarea>
+                            <input class="w-100" type="text" id="nome" placeholder="E-mail" />
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-12 d-flex justify-content-center">
-                            <a class="btn background-light-pink botaos">Enviar</a>
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="w-100" type="text" id="nome" placeholder="Assunto" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <textarea class="w-100" type="text" id="nome" placeholder="Mensagem" />
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 50px">
+                        <div class="col-4">
+                            <a class="btn background-light-pink botaos" style="float: right">Enviar</a>
                         </div>
                     </div>
                 </form>
@@ -62,73 +68,3 @@
         </div>
     </div>
 </section>
-
-<section id="contato" class="pt-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <h3 class="home-main-title">Conecte-se Conosco!</h3>
-            </div>
-
-            <div class="col-12 text-center social-medias-dark pb-5">
-                <p>
-                    <i class="fab fa-instagram pr-3"></i>
-                    <i class="fab fa-linkedin pr-3"></i>
-                    <i class="fab fa-facebook pr-3"></i>
-                    <i class="fab fa-youtube pr-3"></i>
-                </p>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<div class="row" style="padding-bottom: 40px;">
-    <div class="col-lg-12">
-        <div id="map-canvas" class="mt-30" style="height: 600px !important;"></div> <!-- map area -->
-    </div>
-</div>
-
-@section Scripts{
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_g0HB1vcLs5Gg8X3WyOIldRKYy_5_CmM"></script>
-
-    <script>
-        $(document).ready(function ($) {
-            var styles = [{}];
-
-            var styledMap = new google.maps.StyledMapType(styles,
-                { name: "Hotel Cecil" });
-
-            var mapOptions = {
-                zoom: 17,
-                center: new google.maps.LatLng(-21.215981730692924, -47.81840574974915),
-                scrollwheel: false,
-                // disable mapType-top_right corner
-                mapTypeControl: true,
-                disableDefaultUI: false,
-
-                mapTypeControlOptions: {
-                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map-canvas']
-                }
-            };
-            var map = new google.maps.Map(document.getElementById('map-canvas'),
-                mapOptions);
-
-            var marker1 = new google.maps.Marker({
-                position: new google.maps.LatLng(-21.215981730692924, -47.81840574974915),
-                map: map,
-                animation: google.maps.Animation.BOUNCE,
-                /* url = 'http://www.google.com/'*/
-            });
-
-            //google.maps.event.addListener(marker1, 'click', function () {
-            //    window.location.href = marker1.url;
-            //    window.open(this.url, '_blank');
-            //});
-
-            map.mapTypes.set('map-canvas', styledMap);
-            map.setMapTypeId('map-canvas');
-        });
-
-    </script>
-}
