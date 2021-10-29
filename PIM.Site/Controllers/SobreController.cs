@@ -14,5 +14,11 @@ namespace PIM.Site.Controllers
         {
             return View();
         }
+
+        [Route("teste")]
+        public IActionResult Teste()
+        {
+            return View();
+        }
     }
 }

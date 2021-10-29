@@ -1,0 +1,15 @@
+﻿@model List<PIM.Site.Models.TesteViewModel>
+
+@foreach (var item in Model)
+{
+
+    <h1>@item.Nome_quarto</h1>
+    <p>
+        @item.Quantia_camas<br />
+        @item.Banheiros<br />
+        @item.Valor_quarto<br />
+    </p>
+
+    @*<img src="@{"~/assets/images/" + @item.Img_quarto + ".jpg";}"/>*@
+
+}
