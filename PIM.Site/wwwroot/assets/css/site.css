@@ -35,12 +35,20 @@ p, a, .nav-item {
     font-size: 16px;
 }
 
+.active{
+    color: white;
+}
+
+h2{
+    color: var(--light-pink);
+}
+
+.text-dark {
+    color: black;
+}
 /* Section media
 -------------------------------------------------- */
-
-
 @media(min-width: 992px) {
-
     .container-navbar {
         max-width: 1600px;
     }
@@ -213,28 +221,23 @@ body {
 .carousel-item {
     height: 100%;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    display: flex;
-    align-items: center;
 }
 
 .inicio .caixa {
     text-align: center;
-    display: flex;
+/*    display: flex;
     align-items: center;
-    align-content: center;
+    align-content: center;*/
 }
 
 .inicio .texto {
     color: #FFF;
 }
 
-.inicio .row {
-    align-content: center;
-    align-items: center;
+.inicio{
     height: 90vh;
-    padding-bottom: 30%;
+    /*padding-bottom: 30%;*/
 }
 
 .indinicio .active {
@@ -267,6 +270,7 @@ body {
     display: flex;
     align-items: center;
     opacity: 1;
+    padding: 80px 0;
 }
 
 
@@ -280,9 +284,9 @@ body {
     }
 
     .service-box i {
-        font-size: 36px;
-        margin-bottom: 20px;
-        color: #000;
+        font-size: 34px;
+        margin-bottom: 5px;
+        color: white;
     }
 
     .service-box h4 {
@@ -297,7 +301,7 @@ body {
     }
 
     .service-box:hover > i, .service-box:hover > h4 {
-        color: #65DAF9;
+        color: var(--second-color);
     }
 /*serviços da Home terminado*/
 
@@ -349,6 +353,9 @@ body {
 /*fim card reservar*/
 
 /*viagens*/
+#viagens{
+    padding: 80px 0;
+}
 
 #viagens i {
     font-size: 36px;
@@ -357,21 +364,18 @@ body {
 }
 
 .body-vistas {
-    text-align: left;
-    background-color: #FFF;
+    background-color: transparent;
     font-size: 16px;
 }
 
 .body-viagem {
-    text-align: center;
-    background-color: #DDC8BE;
+    background-color: var(--personal-pink);
     font-size: 16px;
 }
 
 
 .body-trens {
-    text-align: end;
-    background-color: #FFF;
+    background-color: transparent;
     font-size: 16px;
 }
 
@@ -384,7 +388,7 @@ body {
 /*card carousel quartos*/
 .shadow-effect {
     background: #DFD6D1;
-    padding: 20px;
+    padding: 10px;
     border-radius: 4px;
     text-align: center;
     border: 1px solid #ececec;
@@ -393,21 +397,31 @@ body {
 
 #carousel-card .shadow-effect p {
     font-family: inherit;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.5;
     margin: 0 0 17px 0;
     font-weight: 300;
 }
 
-.card-nome {
-    margin: -17px auto 0;
-    display: table;
-    width: auto;
-    background: #3190e7;
-    padding: 9px 35px;
-    border-radius: 12px;
+.btn-default {
+    background: var(--second-color);
+    padding: 10px 35px;
+    border-radius: 5px;
     text-align: center;
-    color: #444;
+    color: white!important;
+    border: 2px solid var(--second-color);
+    font-weight: 500;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+}
+
+.btn-default:hover {
+    background: transparent;
+    padding: 10px 35px;
+    border-radius: 5px;
+    text-align: center;
+    color: black!important;
+     font-weight:500;
+    border: 2px solid var(--second-color);
     box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
 }
 
@@ -434,9 +448,9 @@ body {
 }
 
 .owl-carousel .owl-item img {
-    max-width: 150px;
+/*    max-width: 150px;*/
     margin: 0 auto 17px;
-    border-radius: 6px;
+    /*border-radius: 6px;*/
 }
 
 #carousel-card.owl-carousel .owl-dots .owl-dot.active span,
@@ -469,11 +483,12 @@ body {
 
 
 .home-card-title {
-    text-align: initial;
-    font-size: 48px;
+    font-size: 30px;
     font-weight: 400;
     color: #097100;
 }
+
+
 
 /*cards carousel quartos fim*/
 

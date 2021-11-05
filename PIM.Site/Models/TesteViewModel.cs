@@ -15,6 +15,6 @@ namespace PIM.Site.Models
 
         public int Quantia_camas { get; set; }
 
-        public decimal Banheiros { get; set; }
+        public decimal Quantia_banheiros { get; set; }
     }
 }
