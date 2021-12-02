@@ -11,6 +11,7 @@ namespace PIM.Site.Controllers
         [Route("logar")]
         public IActionResult SingIn()
         {
+            ViewData["Title"] = "Logar";
             return View();
         }
     }

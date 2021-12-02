@@ -1,25 +1,27 @@
-﻿<div style="padding-top:3%">
+﻿@model List<PIM.Site.Models.QuartosViewModel>
+
+@foreach(var item in Model)
+{
+    <div style="padding-top:3%">
     <div class="card mb-3" style="padding-top:2%;">
         <div class="col-md-12">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="/assets/images/2.jpg" class="img-fluid rounded-start" alt="Quarto" style="height:90%">
+                    <img src="/assets/images/@{@item.Img_quarto}.jpg" class="img-fluid rounded-start" alt="Quarto" style="width: 100%">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-4">
                     <div class="card-body">
-                        <h5 class="card-title">Executive Prime</h5>
-                        <p class="quarto-preco">R$ 980,00</p>
-                        <button type="button" class="btn btn-secondary">Reserve agora</button>
+                        <h5 class="card-title">@item.Nome_quarto</h5>
+                        <p class="quarto-preco">R$ @item.Valor_quarto</p>
+                        <a href="@Url.Action("InfoQuarto", "Servicos")" class="btn btn-secondary">Reserve agora</a>
                         <p></p>
-                        <p style="font-weight:bold"><i class="fas fa-bed"> 1 </i><i class="fas fa-bath"> 1 </i><i class="fas fa-smoking"> 1</i> </p>
-                        <p class="card-text"><small class="text-muted"><i class="fas fa-check"></i> Cancelamento grátis</small></p>
-                        <p class="card-text"><small class="text-muted"><i class="fas fa-check"></i> Café da manhã</small></p>
+                        <p style="font-weight:bold"><i class="fas fa-bed"> @item.Quantia_camas </i><i class="fas fa-bath"> @item.Quantia_banheiros </i>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card-body">
                         <div class="item-texto">
-                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et aenean et faucibus pellentesque cras sapien. Proin augue neque pharetra dignissim sit porta tristique at. Amet turpis molestie mauris, lectus mattis magna facilisis. Ultrices scelerisque enim varius nisl consectetur risus tincidunt elementum.”</p>
+                            <p>@item.Descricao_quarto</p>
                         </div>
                     </div>
                 </div>
@@ -27,3 +29,5 @@
         </div>
     </div>
 </div>
+}
+

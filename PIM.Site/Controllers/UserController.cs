@@ -11,12 +11,14 @@ namespace PIM.Site.Controllers
         [Route("alterar-conta")]
         public IActionResult Index()
         {
+            ViewData["Title"] = "Alterar Conta";
             return View();
         }
 
         [Route("meus-quartos")]
         public IActionResult MeusQuartos()
         {
+            ViewData["Title"] = "Meus quartos";
             return View();
         }
     }

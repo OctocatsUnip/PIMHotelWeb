@@ -11,6 +11,7 @@ namespace PIM.Site.Controllers
         [Route("contato")]
         public IActionResult Index()
         {
+            ViewData["Title"] = "Contato";
             return View();
         }
     }

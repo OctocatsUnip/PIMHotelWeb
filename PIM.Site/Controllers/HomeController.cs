@@ -12,8 +12,10 @@ namespace PIM.Site.Controllers
             _logger = logger;
         }
 
+        
         public IActionResult Index()
         {
+            ViewData["Title"] = "Hotel Cecil";
             return View();
         }        
 

@@ -12,6 +12,7 @@ namespace PIM.Site.Controllers
         [Route("politica-de-privacidade")]
         public IActionResult PoliticaPrivacidade()
         {
+            ViewData["Title"] = "Politica de Privacidade";
             return View();
         }
 

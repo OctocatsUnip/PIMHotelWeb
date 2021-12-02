@@ -16,12 +16,14 @@ namespace PIM.Site.Controllers
         [Route("detalhes-quarto")]
         public IActionResult InfoQuarto()
         {
+            ViewData["Title"] = "Detalhes quarto";
             return View();
         }
 
         [Route("confirmar-reserva")]
         public IActionResult ConfirmarReserva()
         {
+            ViewData["Title"] = "Confirmar Reserva";
             return View();
         }
     }
