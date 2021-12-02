@@ -18,7 +18,7 @@ namespace PIM.Site.Views.Shared.Components.CarouselQuartos
                 Timeout = TimeSpan.FromSeconds(10)
             };
 
-            var url = "http://localhost:5000/quarto";
+            var url = "http://localhost:5000/quartos";
             //JsonSerializerOptions opt = new JsonSerializerOptions()
             //{
             //    PropertyNameCaseInsensitive = true,
